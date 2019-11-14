@@ -8,6 +8,6 @@ COPY cicd/docker-entrypoint.sh /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+#ENTRYPOINT ["docker-entrypoint.sh"]
 
 #CMD ["java","-jar","employee-producer-0.0.1-SNAPSHOT.jar"]
