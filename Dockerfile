@@ -1,8 +1,8 @@
 From openjdk:8
 WORKDIR /home
 
-CMD pwd
-CMD ls -a
+#CMD pwd
+#CMD ls -a
 copy ./target/employee-producer-0.0.1-SNAPSHOT.jar /home/employee-producer-0.0.1-SNAPSHOT.jar
 COPY cicd/docker-entrypoint.sh /usr/local/bin/
 
