@@ -4,7 +4,7 @@ WORKDIR /home
 #CMD pwd
 #CMD ls -a
 copy ./target/employee-producer-0.0.1-SNAPSHOT.jar /home/employee-producer-0.0.1-SNAPSHOT.jar
-COPY cicd/docker-entrypoint.sh /usr/local/bin/
+#copy cicd/docker-entrypoint.sh /usr/local/bin/
 
 #RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
