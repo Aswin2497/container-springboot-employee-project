@@ -80,7 +80,7 @@ Docker-Build:
   tags:
     - shell
 
-publish:
+.publish:
   stage: publish
   tags:
     - publish
@@ -92,8 +92,9 @@ Deploy:
     dependencies: []
     stage: deploy
     script:
-        - docker stack deploy --compose-file docker-stack.yml ${CI_PROJECT_NAME} 
-        - docker stack ps ${CI_PROJECT_NAME}
+        #- docker stack deploy --compose-file docker-stack.yml ${CI_PROJECT_NAME} 
+        #- docker stack ps ${CI_PROJECT_NAME}
+        docker container run --name producer -p 8080:8080 -d ${BUILDNAME}:${CI_PIPELINE_ID}
     tags:
     - shell
     - deploy
