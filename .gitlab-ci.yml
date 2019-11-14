@@ -59,7 +59,7 @@ build:
   only:
     - master
 
-zip:
+.zip:
   stage: package
   tags:
     - shell
