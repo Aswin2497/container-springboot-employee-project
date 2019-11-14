@@ -54,7 +54,7 @@ build:
     - shell
   script:
     - mvn clean install
-    - mvn package sonar:sonar -Dsonar.host.url=http://13.234.226.223:9000
+    - mvn package sonar:sonar -Dsonar.host.url=http://CURR_IP:9000
     #- mvn --batch-mode verify sonar:sonar -Dsonar.host.url=$SONAR_URL -Dsonar.login=$SONAR_LOGIN -Dsonar.password=$SONAR_PASSWORD
   only:
     - master
