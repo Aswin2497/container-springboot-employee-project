@@ -94,7 +94,7 @@ Deploy:
     script:
         #- docker stack deploy --compose-file docker-stack.yml ${CI_PROJECT_NAME} 
         #- docker stack ps ${CI_PROJECT_NAME}
-        docker container run --name producer$CI_PIPELINE_ID -p 8080:8080 -d ${BUILDNAME}:${CI_PIPELINE_ID}
+        docker container run --name producer$CI_PIPELINE_ID -p 8080:8080 -it ${BUILDNAME}:${CI_PIPELINE_ID}
     tags:
     - shell
     - deploy

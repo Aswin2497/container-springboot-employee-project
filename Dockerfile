@@ -1,5 +1,5 @@
 From openjdk:8
-WORKDIR /home
+#WORKDIR /home
 
 #CMD pwd
 #CMD ls -a
