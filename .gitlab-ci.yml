@@ -15,7 +15,7 @@ stages:
     - Build
     - test
     - scan
-    - package
+    - Package
     - publish
     
     - deploy
