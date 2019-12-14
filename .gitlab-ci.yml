@@ -33,7 +33,7 @@ Package:
     - mvn package
   artifacts:
     name: "$CI_JOB_NAME-package"
- #   paths:
+    paths:
  #   - target/*.jar
     
 .test:
