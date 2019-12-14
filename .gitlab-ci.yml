@@ -22,6 +22,7 @@ stages:
     - downandup
 
 build:
+  stage: Build
   script:
     - pwd
 #    - echo $MAVEN_REPO_PASS
