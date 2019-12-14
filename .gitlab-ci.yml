@@ -32,9 +32,9 @@ build:
 #    - mvn $MAVEN_CLI_OPTS compile
     - mvn package
   artifacts:
-    name: "$CI_JOB_NAME-buildfiles"
+    name: "$CI_JOB_NAME-package"
     paths:
-    - target/
+    - target/*.jar
     
 .test:
     stage: test
