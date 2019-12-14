@@ -21,8 +21,8 @@ stages:
     - deploy
     - downandup
 
-build:
-  stage: Build
+Package:
+  stage: Package
   script:
     - pwd
 #    - echo $MAVEN_REPO_PASS
@@ -33,8 +33,8 @@ build:
     - mvn package
   artifacts:
     name: "$CI_JOB_NAME-package"
-    paths:
-    - target/*.jar
+ #   paths:
+ #   - target/*.jar
     
 .test:
     stage: test
