@@ -12,7 +12,7 @@ cache:
     - target/
     
 stages:
-    - build
+    - Build
     - test
     - scan
     - package
