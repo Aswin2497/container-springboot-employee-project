@@ -45,8 +45,8 @@ build:
         - mvn $MAVEN_CLI_OPTS test
     artifacts:
       name: "$CI_JOB_NAME-buildfiles"
-    paths:
-    - target/
+      paths:
+      - target/
 
         
 .scan:
