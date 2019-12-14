@@ -34,7 +34,7 @@ Package:
   artifacts:
     name: "$CI_JOB_NAME-package"
     paths:
- #   - target/*.jar
+    - target/*.jar
     
 .test:
     stage: test
