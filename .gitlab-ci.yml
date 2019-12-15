@@ -82,7 +82,7 @@ Package:
   tags:
     - shell
 
-.publish:
+publish:
   stage: publish
   tags:
     - publish
@@ -90,6 +90,7 @@ Package:
 
   script:
     - mvn $MAVEN_CLI_OPTS deploy
+    
 .Deploy:
     dependencies: []
     stage: deploy
