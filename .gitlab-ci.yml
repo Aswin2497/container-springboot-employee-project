@@ -23,4 +23,4 @@ deploy:
   stage: deploy
   script:
     #- mvn $MAVEN_CLI_OPTS deploy -x
-    - mvn --settings .m2/settings.xml deploy
+    - mvn --settings .m2/settings.xml deploy -x
