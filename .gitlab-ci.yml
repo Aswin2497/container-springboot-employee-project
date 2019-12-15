@@ -84,9 +84,9 @@ Package:
 
 publish:
   stage: publish
-  tags:
-    - publish
-    - shell
+ # tags:
+ #   - publish
+ #   - shell
 
   script:
     - mvn $MAVEN_CLI_OPTS deploy
