@@ -19,7 +19,7 @@ build:
   script:
     - mvn $MAVEN_CLI_OPTS test
 
-deploy:
+.deploy:
   stage: deploy
   script:
     #- mvn $MAVEN_CLI_OPTS deploy -x
