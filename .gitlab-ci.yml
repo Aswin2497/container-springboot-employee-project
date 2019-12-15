@@ -13,7 +13,7 @@ build:
   stage: build
   script:
     - mvn $MAVEN_CLI_OPTS compile
-    - mvn --settings .m2/settings.xml -x deploy
+    - mvn -X $MAVEN_CLI_OPTS deploy
 .test:
   stage: test
   script:
