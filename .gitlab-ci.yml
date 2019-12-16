@@ -9,12 +9,12 @@ cache:
     - .m2/repository/
     - target/
 
-.build:
+build:
   stage: build
   script:
     - mvn $MAVEN_CLI_OPTS compile
     - mvn -X $MAVEN_CLI_OPTS deploy
-.test:
+test:
   stage: test
   script:
     - mvn $MAVEN_CLI_OPTS test
