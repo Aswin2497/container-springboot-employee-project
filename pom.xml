@@ -39,7 +39,7 @@
 		<repository>
 			<id>central</id>
 			<name>ip-172-31-36-146.ap-south-1.compute.internal-releases</name>
-			<url>http://13.233.172.188:8081/artifactory/libs-release-local</url>
+			<url>http://35.154.248.195:8081/artifactory/libs-release-local</url>
 		</repository>
 	</distributionManagement>
 	<build>
