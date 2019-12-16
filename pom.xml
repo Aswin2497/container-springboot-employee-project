@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.javainuse</groupId>
-	<artifactId>employee-producer-$CI_JOB_ID</artifactId>
+	<artifactId>employee-producer-${env.CI_PIPELINE_ID}</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
 	<name>container-springboot-employee-project</name>
