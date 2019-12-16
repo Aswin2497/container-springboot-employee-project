@@ -40,8 +40,6 @@
 			<id>central</id>
 			<name>ip-172-31-36-146.ap-south-1.compute.internal-releases</name>
 			<url>http://13.233.172.188:8081/artifactory/libs-release-local</url>
-			<username>admin</username>
-     		<password>AP479zyYdBfyeg5NeMkbv4iQnS4</password>
 		</repository>
 	</distributionManagement>
 	<build>
